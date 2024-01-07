@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>이력서 - 김현우</title>
+    <meta name="theme-color" content="#FEE500" />
+    <meta name="description" content="iOS Developer, 김현우입니다." />
+
+    <meta property="og:url" content="https://gatherheart.github.io/resume" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="이력서 - 김현우" />
+    <meta property="og:image" content="./resume-cover.png" />
+    <meta property="og:description" content="iOS Developer, 김현우입니다." />
+    <meta property="og:locale" content="ko_KR" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+    $(document).ready(function () {
+      document
+        .querySelector("body")
+        .style.setProperty(
+          "--background",
+          "linear-gradient(to right, #fee500, #ffffff)"
+        );
+
+      $(document).scroll(function () {
+        var style = document.querySelector("body").style;
+
+        if (isOnScreen($("#naver"))) {
+          style.setProperty(
+            "--background",
+            "linear-gradient(to right, #04c75a, #ffffff)"
+          );
+        } else {
+          style.setProperty(
+            "--background",
+            "linear-gradient(to right, #fee500, #ffffff)"
+          );
+        }
+      });
+    });
+
+    function isOnScreen(element) {
+      var curPos = element.offset();
+      var curTop = curPos.top;
+      var scrollBottom = $(this).scrollTop() + $(this).height();
+      return curTop > scrollBottom ? false : true;
+    }
+  </script>
+  <body>
+    <div class="container">
+      <section>
+        <h1>Hello, 안녕하세요<br />저는 김현우입니다</h1>
+        <p class="big-paragraph">
+          현재 4년차 카카오톡 iOS 개발자로 일하고 있습니다. <br /><br />
+          저는 개발을 통해 작은 일부터 커다란 우리의 삶까지 <br />
+          바꿀 수 있다고 생각합니다. <br />
+          배우는 것을 좋아하며, 개발하는 모든 것들에 관심이 많습니다.
+        </p>
+      </section>
+      <section>
+        <h2>Work Experience<span class="period-mark">.</span></h2>
+        <div class="row">
+          <div class="row-left">
+            <h3>카카오</h3>
+            <span class="role">iOS Developer</span>
+            <span> <time datetime="2020-12">2020. 12</time> - 현재 </span>
+          </div>
+          <div class="row-right">
+            <div class="project">
+              <h4>카카오톡 iOS 기술 개발<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2020-12">2020. 12</time> - 현재
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                유저의 더 나은 경험을 위해, 매일 카카오톡 iOS의 새로운 기능을
+                고민하고 개발하며 유지보수 하고 있습니다.
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <ul>
+                <li>새로운 기능에 대한 설계 및 구현</li>
+                <li>사용자 경험 모니터링 및 이슈 정리</li>
+                <li>기능 개선 및 유지보수</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>iOS, Swift, Objective-C, Test Automation, Firebase</p>
+            </div>
+            <div class="project">
+              <h4>메시징 시스템 담당<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2020-12">2020. 12</time> -
+                <time datetime="2023-03">2023. 03</time>
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                iOS 카카오톡 메세징 관련 이슈 처리 및 메세징 유지보수를
+                담당했습니다.
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <ul>
+                <li>메시징 시스템에 대한 지속 개선 및 문서 작성</li>
+                <li>코드 분리 및 레거시 코드 제거</li>
+                <li>통합 테스트 및 버그 Fix, 이슈 대응</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>iOS, Swift, Objective-C, Test Automation, Firebase</p>
+            </div>
+            <div class="project">
+              <h4>채팅방 개선 및 개발<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2020-12">2020. 12</time> - 현재
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                iOS 카카오톡 채팅방 내 새로운 기능을 개발 및 개선을
+                진행하였습니다.
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <ul>
+                <li>
+                  "<a href="https://talktips.kakao.com/content/34"
+                    >말풍선 공감 기능</a
+                  >" 개발
+                </li>
+                <li>
+                  "<a href="https://talktips.kakao.com/content/46"
+                    >채팅방 참여 설정 기능</a
+                  >" 개발
+                </li>
+                <li>대용량 파일 공유 기능 개발</li>
+                <li>채팅방 내 #검색 UX 개선</li>
+                <li>채팅방 코드 재작성 및 개선</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>iOS, Swift, Objective-C, Test Automation, Firebase</p>
+            </div>
+            <div class="project">
+              <h4>프로젝트 관리 개선<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2022-12">2022. 12</time> - 현재
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                더 나은 개발 환경과 생산성을 위해 10년간 개발된 프로젝트의 관리
+                방식을 개선했습니다.
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <ul>
+                <li>카카오톡 프로젝트 Tuist 전환</li>
+                <li>외부 디펜던시 SPM 전환</li>
+                <li>Tuist 전용 커맨드라인툴 개발</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>iOS, Swift, Objective-C, Tuist</p>
+            </div>
+          </div>
+        </div>
+        <div id="naver" class="row">
+          <div class="row-left">
+            <h3>NAVER<span class="period-mark">.</span></h3>
+            <span class="role">Intern. Frontend Developer</span>
+            <span> <time datetime="2020-11">2020. 11</time> - 2020. 12</span>
+          </div>
+          <div class="row-right">
+            <div class="project">
+              <h4>Internship<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2020-11">2020. 11</time> -
+                <time datetime="2020-12">2020. 12</time>
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                네이버 예약하기 시스템의 실시간 좌석 점유 시스템을 프로토타이핑
+                개발하였습니다.
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <ul>
+                <li>실시간 좌석 점유 시스템 설계</li>
+                <li>백엔드, 프론트엔드 개발</li>
+                <li>실시간 좌석 점유 시스템에 대한 실현 가능성 검증</li>
+                <li>스트레스 테스트 시도</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>TypeScript, React, GraphQL, Node.js, Jest</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-left">
+            <h3>프루이션<span class="period-mark">.</span></h3>
+            <span class="role">Software Engineer</span>
+            <span>
+              <time datetime="2019-12">2019. 12</time> -
+              <time datetime="2020-08">2020. 08</time></span
+            >
+          </div>
+          <div class="row-right">
+            <div class="project">
+              <h4>Forestin<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2017-10">2019. 12</time> -
+                <time datetime="2018-11">2020. 08</time>
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                관심 분야를 가진 사람들이 모여 자기개발과 취미생활을 공유할 수
+                있는 동아리 어플리케이션 개발
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <ul>
+                <li>기술 환경 구성 및 기본 기능 설계</li>
+                <li>GraphQL, Node.js 기반 백엔드 서버 구현</li>
+                <li>React-Native 기반 프론테엔드 구현</li>
+                <li>AWS 서버 구성 및 로드밸런싱 적용</li>
+                <li>학생 창업유망팀 300 참여 및 수상</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>
+                TypeScript, React-Native, GraphQL, Node.js, Jest, AWS, Docker
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Other Experiences<span class="period-mark">.</span></h2>
+        <div class="other">
+          <h3>ERC Coin Publishing<span class="period-mark">.</span></h3>
+          <span class="time"
+            ><time datetime="2019-06">2019. 06.</time> -
+            <time datetime="2019-12">2019. 12.</time></span
+          >
+          <p>
+            ERC20 기반의 코인을 발행한 경험이 있습니다. 중고차 시장의 불투명성을
+            해결하기 위한 인센티브 토큰을 개발해 이더리움 네트워크에
+            발행했습니다.
+          </p>
+        </div>
+        <div class="other">
+          <h3>인공지능 데이터셋 경진대회<span class="period-mark">.</span></h3>
+          <span class="time"><time datetime="2013-11">2013. 11.</time></span>
+          <p>
+            한국정보화진흥원과 셀렉트 스타 주관 인공지능 데이터셋 경진대회에서
+            데이터셋을 생성하는 알고리즘과 전처리 방법을 선보여 최우수상을
+            수상하였습니다.
+          </p>
+        </div>
+        <div class="other">
+          <h3>성균관대학교<span class="period-mark">.</span></h3>
+          <span class="role">컴퓨터공학과</span>
+          <span class="time"
+            ><time datetime="2015-03">2015. 03.</time> -
+            <time datetime="2021-02">2021. 02.</time></span
+          >
+          <p>
+            컴퓨터공학과에서 4년간 공부하며 컴퓨터 공학의 모든 과목을 우수한
+            성적으로 이수하였습니다. 총 4학기에서 성적우수장학금을 받았습니다.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Skills<span class="period-mark">.</span></h2>
+        <div class="other">
+          <h3>Overall<span class="period-mark">.</span></h3>
+          <ul>
+            <li>
+              어떤 개발 분야든 공부함으로써 원하는 것을 만들어 낼 수 있고 이를
+              통해 가치를 만들 수 있다고 생각합니다.
+            </li>
+            <li>
+              더 나은 기술을 배우고 개발해, 현재의 문제점을 개선하는 것을
+              좋아합니다.
+            </li>
+            <li>
+              모듈화 작업을 통해 의존성을 분리하고 테스트 가능하도록 만드는 것을
+              선호합니다.
+            </li>
+            <li>하지만, 최우선으로는 유저의 더 나은 경험을 위해 고민합니다.</li>
+          </ul>
+        </div>
+        <div class="other">
+          <h3>Communication<span class="period-mark">.</span></h3>
+          <ul>
+            <li>업무에 있어 모든 것을 공유하고 알기 위해 노력합니다.</li>
+            <li>
+              애매한 것은 선호하지 않아 커뮤니케이션을 통해 불분명한 것은 확실히
+              확인하고자 합니다.
+            </li>
+            <li>
+              문제를 숨기지 않고, 드러낼 때 문제가 해결될 수 있다고 믿습니다.
+            </li>
+          </ul>
+        </div>
+        <div class="other">
+          <h3>iOS<span class="period-mark">.</span></h3>
+          <ul>
+            <li>Objective-C부터 Swift까지 모두 개발할 수 있습니다.</li>
+            <li>iOS CoreML부터 ARkit까지 최신 트랜드를 개발할 수 있습니다.</li>
+            <li>
+              모바일 어플리케이션에서 발생할 수 있는 문제에 대해 해결한 경험이
+              많습니다.
+            </li>
+          </ul>
+        </div>
+        <div class="other">
+          <h3>DevOps<span class="period-mark">.</span></h3>
+          <ul>
+            <li>
+              AWS EC2, Google GCE 등을 이용해 어플리케이션 레이어를 구성할 수
+              있습니다.
+            </li>
+            <li>
+              GitHub Actions, Jenkins CI/CD pipeline을 구성할 수 있습니다.
+            </li>
+            <li>
+              반복적인 업무를 제거하기 위해 스크립트 또는 CLI를 통해 업무용 툴을
+              만들 수 있습니다.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Contact<span class="period-mark">.</span></h2>
+        <ul>
+          <li><a href="mailto:gatherheart@naver.com">이메일</a></li>
+          <li>
+            <a href="https://github.com/gatherheart" target="_blank">깃허브</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
